@@ -24,7 +24,7 @@
   </tr>
 </table>
 
-### <ins>The astroday logo</ins>:
+### <ins>The curiosity logo</ins>:
 <img width="162" height="162" alt="Image" src="https://github.com/user-attachments/assets/2f501f9c-a781-4148-88e4-d96bbe90bf20" />
 
 ###  <ins>Ui first concept by Claude Code</ins>:
