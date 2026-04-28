@@ -2,9 +2,9 @@ import { curiosityLogo } from "@/assets/index";
 import { Ionicons } from "@expo/vector-icons";
 import { Image, Pressable, Text, View } from "react-native";
 
-export function Header() {
+export function Header(): React.JSX.Element {
   return (
-    <View className="h-36 px-4 flex-row items-center justify-between">
+    <View className="h-24 px-4 flex-row items-center justify-between">
       <View className="flex-row items-center gap-3">
         <Image
           source={curiosityLogo}

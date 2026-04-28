@@ -27,6 +27,9 @@ module.exports = {
           'button-active': '#E6F1FB',
           icon: '#1A1A1A',
         },
+        imageDay: {
+          'card': '#E2E8F0'
+        }
       },
     },
   },

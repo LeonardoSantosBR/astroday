@@ -6,7 +6,7 @@ import { useColorScheme } from 'react-native';
 
 const queryClient = new QueryClient();
 
-export default function RootLayout() {
+export default function RootLayout(): React.JSX.Element {
   const colorScheme = useColorScheme();
 
   return (
