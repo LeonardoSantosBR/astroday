@@ -43,7 +43,7 @@ export function ImageOfDay(): React.JSX.Element {
             }`}
           >
             <View className="w-9 h-9 rounded-xl bg-orange-100 items-center justify-center">
-              <Text className="text-orange-500 text-base">⇄</Text>
+              <Text className="text-orange-500 text-lg">⇄</Text>
             </View>
             <Text className="text-text-primary font-semibold text-base">
               Explorar aleatórias
@@ -60,7 +60,7 @@ export function ImageOfDay(): React.JSX.Element {
             }`}
           >
             <View className="w-9 h-9 rounded-xl bg-red-100 items-center justify-center">
-              <Text className="text-red-400 text-base">▦</Text>
+              <Text className="text-red-400 text-lg">▦</Text>
             </View>
             <Text className="text-text-primary font-semibold text-base">
               No meu aniversário
