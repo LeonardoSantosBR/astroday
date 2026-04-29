@@ -1,12 +1,13 @@
 import { getDateInfo } from "@/helpers";
 import { useGetImageOfDay } from "@/hooks";
-import { Image, Pressable, Text, View } from "react-native";
-import { DateBadge } from "../dateBadge";
+import { Pressable, Text, View } from "react-native";
 import { Loading } from "../loading/Loading";
+import { DateBadge } from "./DateBadge";
+import { IotdInfo } from "./IotdInfo";
 
 export function Iotd(): React.JSX.Element {
-  const dataInfo = getDateInfo();
-  const date = dataInfo.dateCompleted;
+  const dateInfo = getDateInfo();
+  const date = dateInfo.dateCompleted;
   const { data, isLoading } = useGetImageOfDay(date);
 
   const handlePress = () => {
@@ -23,22 +24,12 @@ export function Iotd(): React.JSX.Element {
             }`}
           >
             <DateBadge />
-            <Image
-              source={{ uri: data?.url }}
-              className="h-52 w-full rounded-2xl bg-imageDay-image"
-              resizeMode="cover"
+            <IotdInfo
+              url={data?.url}
+              title={data?.title}
+              copyright={data?.copyright}
+              explanation={data?.explanation}
             />
-            <View className="gap-1 pt-2">
-              <Text className="text-text-primary font-bold text-xl leading-snug">
-                {data?.title}
-              </Text>
-              <Text className="text-text-tertiary text-sm " numberOfLines={2}>
-                ©{data?.copyright}
-              </Text>
-              <Text className="text-text-secondary text-lg" numberOfLines={2}>
-                {data?.explanation}
-              </Text>
-            </View>
           </View>
         )}
       </Pressable>
