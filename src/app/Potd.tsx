@@ -1,9 +1,9 @@
 import { getDateInfo } from "@/helpers";
 import { useGetPotd } from "@/hooks";
 import { Pressable, Text, View } from "react-native";
-import { Loading } from "../loading/Loading";
-import { PotdDateBadge } from "./PotdDateBadge";
-import { PotdDetails } from "./PotdDetails";
+import { Loading } from "../components/loading/Loading";
+import { PotdDateBadge } from "../components/potd/PotdDateBadge";
+import { PotdDetails } from "../components/potd/PotdDetails";
 
 export function Potd(): React.JSX.Element {
   const dateInfo = getDateInfo();
