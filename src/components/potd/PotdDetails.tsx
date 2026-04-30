@@ -11,7 +11,7 @@ export function PotdDetails(data: potdDataType): React.JSX.Element {
           {data?.title}
         </Text>
         {data?.copyright && (
-          <Text className="text-text-tertiary text-sm" numberOfLines={2}>
+          <Text className="text-text-tertiary text-sm" numberOfLines={1}>
             ©{data.copyright}
           </Text>
         )}

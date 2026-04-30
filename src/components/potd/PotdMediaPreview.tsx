@@ -1,16 +1,17 @@
 import { potdDataType } from "@/types";
-import { Image } from "expo-image";
-import { useVideoPlayer, VideoView } from "expo-video";
 
-export function PotdMediaPreview({ url, media_type }: Pick<potdDataType, "url" | "media_type">): React.JSX.Element {
-  const player = useVideoPlayer(
-    media_type === "video" ? url : null,
-    (p) => {
-      p.loop = true;
-      p.muted = true;
-      p.play();
-    }
-  );
+import { useVideoPlayer, VideoView } from "expo-video";
+import { Image } from "react-native";
+
+export function PotdMediaPreview({
+  url,
+  media_type,
+}: Pick<potdDataType, "url" | "media_type">): React.JSX.Element {
+  const player = useVideoPlayer(media_type === "video" ? url : null, (p) => {
+    p.loop = true;
+    p.muted = true;
+    p.play();
+  });
 
   if (media_type === "video") {
     return (
