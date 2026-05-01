@@ -1,3 +1,4 @@
+import { PotdNoData } from "@/components/potd/PotdNoData";
 import { useGetPotd } from "@/hooks";
 import { useDateStore } from "@/stores";
 import { Pressable, Text, View } from "react-native";
@@ -32,11 +33,7 @@ export function Potd(): React.JSX.Element {
                 media_type={data.media_type}
               />
             ) : (
-              !isLoading && (
-                <Text className="text-text-primary text-center text-sm py-4">
-                  Ainda não há foto ou vídeo do dia disponível.
-                </Text>
-              )
+              !isLoading && <PotdNoData />
             )}
           </View>
         )}
