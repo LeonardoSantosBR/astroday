@@ -2,8 +2,16 @@
 <p>- oficial website: https://api.nasa.gov/</p>
 <p>- api example: (GET) https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2024-03-01</p>
 
+###  <ins>2026/05/05 · Details · screen Image of the day details</ins>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c3e562ad-d5a0-4c16-9299-fb02a41fab47" width="45%" />
+  <img src="https://github.com/user-attachments/assets/941bc6da-7192-4039-b4cb-5284c29693d2" width="45%" />
+</p>
+
 ###  <ins>2026/04/29 · Home · screen Image of the day · NASA api integrated</ins>
-<img width="405" height="865" alt="Image" src="https://github.com/user-attachments/assets/13b74ed1-7c3b-45d6-b79f-de195b46b553" />
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/13b74ed1-7c3b-45d6-b79f-de195b46b553" width="45%" />
+</p>
 
 ###  <ins>UI fix by Claude Code Design</ins>:
 * i changed the app's name to curiosity and some ui to be more minimalistic
