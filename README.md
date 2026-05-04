@@ -4,8 +4,8 @@
 
 ###  <ins>2026/05/05 · Details · screen Image of the day details</ins>
 <p align="start">
-  <img src="https://github.com/user-attachments/assets/c3e562ad-d5a0-4c16-9299-fb02a41fab47" width="45%" />
-  <img src="https://github.com/user-attachments/assets/941bc6da-7192-4039-b4cb-5284c29693d2" width="45%" />
+  <img src="https://github.com/user-attachments/assets/2e35fd98-27e0-4096-a72c-8872ba95e009" width="45%" />
+  <img src="https://github.com/user-attachments/assets/f27d1670-6c82-4a34-befb-eed3384840fe" width="45%" />
 </p>
 
 ###  <ins>2026/04/29 · Home · screen Image of the day · NASA api integrated</ins>
