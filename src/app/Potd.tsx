@@ -1,6 +1,7 @@
 import { PotdNoData } from "@/components/potd/PotdNoData";
 import { useGetPotd } from "@/hooks";
 import { useDateStore } from "@/stores";
+import { useRouter } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 import { Loading } from "../components/loading/Loading";
 import { PotdDateBadge } from "../components/potd/PotdDateBadge";
@@ -9,13 +10,25 @@ import { PotdDetails } from "../components/potd/PotdDetails";
 export function Potd(): React.JSX.Element {
   const date = useDateStore((state) => state.date);
   const { data, isLoading } = useGetPotd(date);
+  const router = useRouter();
 
   const handlePress = () => {
-    console.log("Pressed");
+    if (!data) return;
+
+    router.push({
+      pathname: "/PotdInspect",
+      params: {
+        url: data.url,
+        title: data.title,
+        copyright: data.copyright,
+        explanation: data.explanation,
+        media_type: data.media_type,
+      },
+    });
   };
 
   return (
-    <View className="h-screen p-4 gap-3">
+    <View className="h-screen bg-white p-4 gap-3">
       <Pressable onPress={handlePress} className="rounded-3xl overflow-hidden">
         {({ pressed }) => (
           <View

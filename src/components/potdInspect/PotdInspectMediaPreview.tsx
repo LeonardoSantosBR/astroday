@@ -1,8 +1,10 @@
 import { potdDataType } from "@/types";
 import { useVideoPlayer, VideoView } from "expo-video";
-import { Image } from "react-native";
+import { Dimensions, Image } from "react-native";
 
-export function PotdMediaPreview({
+const imageHeight = Dimensions.get("window").height * 0.6;
+
+export function PotdInspectMediaPreview({
   url,
   media_type,
 }: Pick<potdDataType, "url" | "media_type">): React.JSX.Element {
@@ -16,7 +18,7 @@ export function PotdMediaPreview({
     return (
       <VideoView
         player={player}
-        style={{ height: 208, width: "100%", borderRadius: 16 }}
+        style={{ height: 408, width: "100%", borderRadius: 16 }}
         nativeControls={false}
         contentFit="cover"
         fullscreenOptions={{ enable: true }}
@@ -26,7 +28,8 @@ export function PotdMediaPreview({
   return (
     <Image
       source={{ uri: url }}
-      className="h-52 w-full rounded-2xl bg-potd-image"
+      style={{ height: imageHeight, width: "100%", borderRadius: 16 }}
+      className="bg-potd-image"
       resizeMode="cover"
     />
   );
