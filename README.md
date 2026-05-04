@@ -3,7 +3,7 @@
 <p>- api example: (GET) https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2024-03-01</p>
 
 ###  <ins>2026/05/05 · Details · screen Image of the day details</ins>
-<p align="center">
+<p align="start">
   <img src="https://github.com/user-attachments/assets/c3e562ad-d5a0-4c16-9299-fb02a41fab47" width="45%" />
   <img src="https://github.com/user-attachments/assets/941bc6da-7192-4039-b4cb-5284c29693d2" width="45%" />
 </p>
