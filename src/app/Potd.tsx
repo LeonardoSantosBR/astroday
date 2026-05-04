@@ -14,7 +14,6 @@ export function Potd(): React.JSX.Element {
 
   const handlePress = () => {
     if (!data) return;
-
     router.push({
       pathname: "/PotdInspect",
       params: {
@@ -68,7 +67,6 @@ export function Potd(): React.JSX.Element {
           </View>
         )}
       </Pressable>
-
       <Pressable onPress={handlePress}>
         {({ pressed }) => (
           <View
