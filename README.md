@@ -10,7 +10,7 @@
 
 ###  <ins>2026/04/29 · Home · screen Image of the day · NASA api integrated</ins>
 <p align="start">
-  <img src="https://github.com/user-attachments/assets/13b74ed1-7c3b-45d6-b79f-de195b46b553" width="45%" />
+  <img src="https://github.com/user-attachments/assets/b3c4469e-8de6-4ee1-8d7b-81ddee74fc1b" width="45%" />
 </p>
 
 ###  <ins>UI fix by Claude Code Design</ins>:
